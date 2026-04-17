@@ -4,6 +4,7 @@ services:
   agent:
     build: .
     ports:
+      - "80:8000"
       - "8000:8000"
     environment:
       - ENVIRONMENT=staging
